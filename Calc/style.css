@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc_container {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.display {
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+.input {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid #fff;
+}
+
+.input .btn {
+    font-size: .9rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.input .btn:active {
+    background: #fff;
+}
+
+.special {
+    color: orangered;
+}
+
+.equal {
+    background: orangered;
+    color: #fff;
+    transition: all .2s;
+}
+
+.input .equal:active {
+    background-color: orangered;
+    color: #fff;
+    transform: scale(.9);
+}
+
+
+/* ############## media query############# */
+
+
+@media screen and (max-width:700px) {
+    .calc_container {
+        transform: scale(1.4);
+    }
+
+    .display {
+        height: 360px;
+    }
+}

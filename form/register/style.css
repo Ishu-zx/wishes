@@ -1,0 +1,22 @@
+:root{
+    --themeColor:rgb(14, 122, 86);
+    --themeColor2:#152b26;
+}
+
+/* media query */
+@media screen and (max-width:700px){
+    .container .register{
+        display: flex;
+    }
+    .register-btn2,.login-btn2{
+        display: block;
+    }
+}
+@media screen and (max-width:420px){
+    .container{
+        width:80vw;
+    }
+}
+a:hover{
+    color:var(--themeColor2);
+}

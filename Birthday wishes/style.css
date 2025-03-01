@@ -1,0 +1,115 @@
+*,
+::before,
+::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: bisque;
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    position:absolute;
+    top: 33%;
+    left: calc(50% + 4px);
+    animation: beat .5s 3s infinite alternate;
+    opacity: .5;
+    visibility: hidden;
+}
+@keyframes beat {
+    100%{
+        transform: scale(.7);
+        opacity: .2;
+        visibility: visible;
+    }
+}
+.box{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:40px;
+    font-family: "Moon Dance", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    position:absolute;
+    width:250px;
+    height: 400px;
+    perspective: 800px;
+    border-radius: 5px 20px 20px 5px;
+    transform: rotateZ(0deg);
+    transition: all .3s;
+    box-shadow: 5px 5px 10px black;
+    user-select: none;
+}
+.page1,
+.page2,
+.backface{
+    width:250px;
+    height: 400px;
+    position: absolute;
+    border-radius: 5px 20px 20px 5px;
+    transition: all .7s;
+    color:goldenrod;
+}
+.page1{
+    background-color: honeydew;
+    background-image: url(images/baloons.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    outline: 2px solid goldenrod;
+}
+.page1 h4{
+    align-self: flex-end;
+}
+.page1 p{
+    font-size: 1.2em;
+    color: rgb(68, 67, 67);
+}
+.page1 p span{
+    color: goldenrod;
+    font-weight: 600;
+}
+.backface{
+    background-color: honeydew;
+    transform-origin: left;
+    transform: rotateY(0deg);
+    outline: 2px solid goldenrod;
+}
+.page2{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-origin: left;
+    transform: rotateY(0deg);
+    text-align: center;
+    padding: 10px;
+    backface-visibility: hidden;
+    outline: 2px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page2 img{
+    position: relative;
+    top: 20%;
+}
+.page2 h2{
+    font-size: 30px;
+}
+.rotate_page2{
+    transform: rotateY(-170deg);
+}
+.rotate_container{
+    transform: rotateZ(5deg);
+}

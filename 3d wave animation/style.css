@@ -1,0 +1,72 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #000;
+}
+.container{
+    display:flex;
+    margin:70px auto;
+}
+.container div{
+    width: 80px;
+    height:250px;
+    margin: 5px;
+    transition: all .2s;
+}
+#one{
+    background-color: aqua;
+    box-shadow: 2px 2px 5px aqua;
+}
+#two{
+    background-color:rgb(138, 190, 32);
+    box-shadow: 2px 2px 5px rgb(138, 190, 32);
+}
+#three{
+    background-color: hotpink;
+    box-shadow: 2px 2px 5px hotpink;
+}
+#four{
+    background-color: yellow;
+    box-shadow: 2px 2px 5px yellow;
+}
+#five{
+    background-color: coral;
+    box-shadow: 2px 2px 5px coral;
+}
+#six{
+    background-color: teal;
+    box-shadow: 2px 2px 5px teal;
+}
+#seven{
+    background-color: crimson;
+    box-shadow: 2px 2px 5px crimson;
+}
+#eight{
+    background-color: cornflowerblue;
+    box-shadow: 2px 2px 5px cornflowerblue;
+}
+#nine{
+    background-color: burlywood;
+    box-shadow: 2px 2px 5px burlywood;
+}
+#ten{
+    background-color: purple;
+    box-shadow: 2px 2px 5px purple;
+}
+
+/* animation */
+ 
+.container div:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    margin:0 15px;
+}
+.container div:hover + div{
+    transform: scale(1.1);
+}
+div:has(+ div:hover){
+    transform: scale(1.1);
+}
+.container .focus{
+    width: 300px;
+}

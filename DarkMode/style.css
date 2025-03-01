@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+body{
+    background-color: rgb(226, 211, 211);   
+}
+path,svg{
+    transition:all .3s;
+    cursor:pointer;   
+}
+body,h1{
+    transition: all .7s;
+}

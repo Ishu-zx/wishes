@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="body-container">
+        <form action="">    
+            <div class="container">
+                <div class="login">
+                    <h1 class="heading">
+                        Login To Your Account
+                    </h1>
+                    <div class="email-box">
+                        <input type="email" id="email" required>
+                        <label class="email" for="email">Email</label>
+                    </div>
+                    <div class="password-box">
+                        <input type="password" id="password" required>
+                        <label class="password" for="password">Password</label>
+                        <span class="eye fa-solid fa-eye"></span>
+                    </div>
+                    <button class="btn">Login</button>
+                    <p>Don't have an account?</p><span class="register-btn">Register</span><span class="register-btn register-btn2"><a href="../register/register.html">Register</a></span>
+                </div>
+                <div class="register">
+                    <h1 class="heading">
+                        let's Do it
+                    </h1>
+                    <div class="firsName-box">
+                        <input type="text" id="firstName" pattern="[A-Za-z]{0,20}" title="Ony Alpha Charset: a-z/A-Z" required disabled>
+                        <label class="fname" for="firstName">First Name</label>
+                    </div>
+                    <div class="lastName-box">
+                        <input type="text" id="lastName" required disabled>
+                        <label class="lname" for="lastName">Last Name</label>
+                    </div>
+                    <div class="email2-box">
+                        <input type="email" name="email2" id="email2" required disabled>
+                        <label class="email2" for="email2">Email</label>
+                    </div>
+                    <div class="userName-box">
+                        <input type="text" name="" id="userName" required disabled>
+                        <label class="username" for="userName">Username</label>
+                    </div>
+                    <div class="password2-box">
+                        <input type="password" name="" id="password2" required disabled >
+                        <label class="password2" for="password2">Password</label>
+                        <span class="eye fa-solid fa-eye"></span>
+                    </div>
+                    <div class="confirm-password-box">
+                        <input type="password" name="" id="confirm-password" required disabled >
+                        <label class="confirm-password" for="confirm-password">Confirm Password</label>
+                        <span class="eye fa-solid fa-eye"></span>
+                    </div>
+                    <button class="btn">Register</button>
+                    <p>Already have an account?</p><span class="login-btn">Login</span><span class="login-btn login-btn2">Login</span>
+                </div>
+                <div class="slider">
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>
